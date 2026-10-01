@@ -1,0 +1,13 @@
+PART B - SEARCH COMPARISON
+
+Search key: 315
+Hashing: FOUND, comparisons = 2
+Linear Search: FOUND, comparisons = 3
+
+Search key: 630
+Hashing: FOUND, comparisons = 3
+Linear Search: FOUND, comparisons = 6
+
+Search key: 999
+Hashing: NOT FOUND, comparisons = 0
+Linear Search: NOT FOUND, comparisons = 8

@@ -1,0 +1,28 @@
+PART A - HASH TABLE INSERTION
+Hash function: h(k) = k % 10
+Collision resolution: Linear Probing
+
+Insert 105: h(105) = 5 -> Inserted at 5
+Table: [-] [-] [-] [-] [-] [105] [-] [-] [-] [-] 
+
+Insert 210: h(210) = 0 -> Inserted at 0
+Table: [210] [-] [-] [-] [-] [105] [-] [-] [-] [-] 
+
+Insert 315: h(315) = 5 -> Collision at 5 -> Inserted at 6
+Table: [210] [-] [-] [-] [-] [105] [315] [-] [-] [-] 
+
+Insert 420: h(420) = 0 -> Collision at 0 -> Inserted at 1
+Table: [210] [420] [-] [-] [-] [105] [315] [-] [-] [-] 
+
+Insert 525: h(525) = 5 -> Collision at 5 -> Collision at 6 -> Inserted at 7
+Table: [210] [420] [-] [-] [-] [105] [315] [525] [-] [-] 
+
+Insert 630: h(630) = 0 -> Collision at 0 -> Collision at 1 -> Inserted at 2
+Table: [210] [420] [630] [-] [-] [105] [315] [525] [-] [-] 
+
+Insert 735: h(735) = 5 -> Collision at 5 -> Collision at 6 -> Collision at 7 -> Inserted at 8
+Table: [210] [420] [630] [-] [-] [105] [315] [525] [735] [-] 
+
+Insert 840: h(840) = 0 -> Collision at 0 -> Collision at 1 -> Collision at 2 -> Inserted at 3
+Table: [210] [420] [630] [840] [-] [105] [315] [525] [735] [-] 
+

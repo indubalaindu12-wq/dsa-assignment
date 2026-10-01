@@ -1,0 +1,9 @@
+PART C - ANALYSIS
+Number of keys (n) = 8
+Table size (m) = 10
+Load factor = n/m = 0.80 (80%)
+Hashing average-case search: O(1) expected
+Hashing worst-case search: O(n)
+Linear search average/worst-case: O(n)
+Hash table extra space: O(m)
+Linear search extra space: O(1)
